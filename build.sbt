@@ -3,7 +3,8 @@ scalaVersion := "2.11.6"
 libraryDependencies ++= Seq(
   "org.scalaz" %% "scalaz-core" % "7.1.1",
   "org.scalaz" %% "scalaz-concurrent" % "7.1.1",
-  "org.scalaz" %% "scalaz-effect" % "7.1.1"
+  "org.scalaz" %% "scalaz-effect" % "7.1.1",
+  "org.scalatest" %% "scalatest" % "2.2.1" % "test"
 )
 
 initialCommands := "import scalaz._, Scalaz._"
