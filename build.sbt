@@ -1,5 +1,13 @@
 scalaVersion := "2.11.6"
 
+libraryDependencies ++= Seq(
+  "org.scalaz" %% "scalaz-core" % "7.1.1",
+  "org.scalaz" %% "scalaz-concurrent" % "7.1.1",
+  "org.scalaz" %% "scalaz-effect" % "7.1.1"
+)
+
+initialCommands := "import scalaz._, Scalaz._"
+
 // Apply default Scalariform formatting. 
 // Reformat at every compile. 
 // c.f. https://github.com/sbt/sbt-scalariform#advanced-configuration for more options.
